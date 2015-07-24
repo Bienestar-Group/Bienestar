@@ -19,3 +19,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::resource('regional','RegionalController');
+Route::get('regional/destroy/{id}',['as' => 'regional/destroy','uses'=>'RegionalController@destroy']);
+Route::post('regional/search',['as' => 'regional/search', 'uses'=>'RegionalController@search']);	
