@@ -23,7 +23,3 @@ Route::controllers([
 Route::resource('regional','RegionalController');
 Route::get('regional/destroy/{id}',['as' => 'regional/destroy','uses'=>'RegionalController@destroy']);
 Route::post('regional/search',['as' => 'regional/search', 'uses'=>'RegionalController@search']);	
-
-Route::resourse ('area','AreaController');
-Route::get('area/destroy/{Codigo}',['as'=>'area/destroy', 'uses'=>'AreaController@destroy']);
-Route::post('area/search',['as'=>'area/search','uses'=>'AreaController@search']);
