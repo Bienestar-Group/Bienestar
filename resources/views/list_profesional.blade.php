@@ -29,7 +29,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					@foreach($profesionals as $profesionals)
+					@foreach($profesionales as $profesionals)
 					<tr>
 						<td>{{$profesional->nombre}}</td>
 						<td>{{$profesional->direccion}}</td>
