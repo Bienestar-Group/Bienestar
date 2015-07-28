@@ -37,13 +37,13 @@ class RegionalController extends Controller {
 	public function store(Request $request)
 	{
 		$regional = new Regional;
-		$regional->nombre = $request->nombre;
-		$regional->direccion = $request->direccion;
-		$regional->telefono = $request->telefono;
-		$regional->pbx = $request->pbx;
-		$regional->director = $request->director;
+		$regional->nombre_regional = $request->nombre;
+		$regional->direccion_regional = $request->direccion;
+		$regional->telefono_regional = $request->telefono;
+		$regional->pbx_regional = $request->pbx;
+		$regional->director_regional = $request->director;
 		$regional->telefono_director = $request->telefono_director;
-		$regional->estado = $request->estado;
+		$regional->estado_regional = $request->estado;
 		$regional->save();
 		return redirect('regional');
 	}
@@ -80,13 +80,13 @@ class RegionalController extends Controller {
 	public function update(Request $request)
 	{
 		$regional=Regional::find($request->id);
-		$regional->nombre = $request->nombre;
-		$regional->direccion = $request->direccion;
-		$regional->telefono = $request->telefono;
-		$regional->pbx = $request->pbx;
-		$regional->director = $request->director;
+		$regional->nombre_regional = $request->nombre_regional;
+		$regional->direccion_regional = $request->direccion_regional;
+		$regional->telefono_regional = $request->telefono_regional;
+		$regional->pbx_regional = $request->pbx_regional;
+		$regional->director_regional = $request->director_regional;
 		$regional->telefono_director = $request->telefono_director;
-		$regional->estado = $request->estado;
+		$regional->estado_regional = $request->estado_regional;
 		$regional->save();
 		return redirect('regional');
 	}
@@ -106,7 +106,7 @@ class RegionalController extends Controller {
 
 	public function search(Request $request)
 	{
-		$regional=Regional::where('nombre','like','%'.$request->nombre.'%')->get();
+		$regionales=Regional::where('nombre_regional','like','%'.$request->nombre.'%')->get();
 		return \View::make('list_regional',compact('regionales'));
 
 	}

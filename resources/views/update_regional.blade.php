@@ -7,23 +7,23 @@
 			{!! Form::hidden('id',$regional->idl)!!}
 		<div class="form-group">
 			{!! Form::label('full_name','Nombre')!!}
-			{!! Form::text('nombre',null,['class'=>'form-control','required'=>'required']) !!}
+			{!! Form::text('nombre_regional',null,['class'=>'form-control','required'=>'required']) !!}
 		</div>
 		<div class="form-group">
 			{!! Form::label('email','Direcci&oacute;n')!!}
-			{!! Form::text('direccion',null,['class'=>'form-control','required'=>'required'])!!}
+			{!! Form::text('direccion_regional',null,['class'=>'form-control','required'=>'required'])!!}
 		</div>
 		<div class="form-group">
 			{!! Form::label('email','Tel&eacute;fono')!!}
-			{!! Form::text('telefono',null,['class'=>'form-control','required'=>'required'])!!}
+			{!! Form::text('telefono_regional',null,['class'=>'form-control','required'=>'required'])!!}
 		</div>
 		<div class="form-group">
 			{!! Form::label('email','PBX')!!}
-			{!! Form::text('pbx',null,['class'=>'form-control','required'=>'required'])!!}
+			{!! Form::text('pbx_regional',null,['class'=>'form-control','required'=>'required'])!!}
 		</div>
 		<div class="form-group">
 			{!! Form::label('email','Director')!!}
-			{!! Form::text('director',null,['class'=>'form-control','required'=>'required'])!!}
+			{!! Form::text('director_regional',null,['class'=>'form-control','required'=>'required'])!!}
 		</div>	
 		<div class="form-group">
 			{!! Form::label('email','Tel&eacute;fono Director')!!}
@@ -31,7 +31,7 @@
 		</div>	
 		<div class="form-group">
 			{!! Form::label('email','Estado')!!}
-			{!! Form::text('estado',null,['class'=>'form-control','required'=>'required'])!!}
+			{!! Form::text('estado_regional',null,['class'=>'form-control','required'=>'required'])!!}
 		</div>		
 
 		<div class="form-group">

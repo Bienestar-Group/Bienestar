@@ -15,13 +15,13 @@ class CreateRegionalsTable extends Migration {
 		Schema::create('regional', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('nombre');
-			$table->string('direccion');
-			$table->bigInteger('telefono');
-			$table->bigInteger('pbx');
-			$table->string('director');
+			$table->string('nombre_regional');
+			$table->string('direccion_regional');
+			$table->bigInteger('telefono_regional');
+			$table->bigInteger('pbx_regional');
+			$table->string('director_regional');
 			$table->bigInteger('telefono_director');
-			$table->string('estado');
+			$table->string('estado_regional');
 			$table->timestamps();
 		});
 	}
