@@ -32,4 +32,18 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+<<<<<<< HEAD
 
+=======
+Route::resource('regional','RegionalController');
+Route::get('regional/destroy/{id}',['as' => 'regional/destroy','uses'=>'RegionalController@destroy']);
+Route::post('regional/search',['as' => 'regional/search', 'uses'=>'RegionalController@search']);	
+
+Route::resourse ('profesional','ProfesionalController');
+Route::get('profesional/destroy/{ID_PROFESIONAL}',['as'=>'profesional/destroy', 'uses'=>'ProfesionalController@destroy']);
+Route::post('profesional/search',['as'=>'profesional/search','uses'=>'ProfesionalController@search']);
+
+Route::resourse ('seguimiento','SeguimientoController');
+Route::get('seguimiento/destroy/{ID_SEGUIMIENTO}',['as'=>'seguimiento/destroy', 'uses'=>'SeguimientoController@destroy']);
+Route::post('seguimiento/search',['as'=>'seguimiento/search','uses'=>'SeguimientoController@search']);
+>>>>>>> cdfc9e36b5934daf9dd5f14539f35964eb309025
