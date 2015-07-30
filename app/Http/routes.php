@@ -11,6 +11,18 @@
 |
 */
 
+Route::resource('regional','RegionalController');
+Route::get('regional/destroy/{id}',['as' => 'regional/destroy','uses'=>'RegionalController@destroy']);
+Route::post('regional/search',['as' => 'regional/search', 'uses'=>'RegionalController@search']);
+
+Route::resource('aprendiz','AprendizController');
+Route::get('aprendiz/destroy/{id}',['as' => 'aprendiz/destroy','uses'=>'AprendizController@destroy']);
+Route::post('aprendiz/search',['as' => 'aprendiz/search', 'uses'=>'AprendizController@search']);	
+
+Route::resource('programa','ProgramaController');
+Route::get('programa/destroy/{id}',['as' => 'programa/destroy','uses'=>'ProgramaController@destroy']);
+Route::post('programa/search',['as' => 'programa/search', 'uses'=>'ProgramaController@search']);	
+
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
@@ -20,6 +32,4 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::resource('regional','RegionalController');
-Route::get('regional/destroy/{id}',['as' => 'regional/destroy','uses'=>'RegionalController@destroy']);
-Route::post('regional/search',['as' => 'regional/search', 'uses'=>'RegionalController@search']);	
+
