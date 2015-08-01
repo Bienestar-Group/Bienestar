@@ -37,6 +37,7 @@ class RegionalController extends Controller {
 	public function store(Request $request)
 	{
 		$regional = new Regional;
+<<<<<<< HEAD
 		$regional->nombre_regional = $request->nombre;
 		$regional->direccion_regional = $request->direccion;
 		$regional->telefono_regional = $request->telefono;
@@ -44,6 +45,15 @@ class RegionalController extends Controller {
 		$regional->director_regional = $request->director;
 		$regional->telefono_director = $request->telefono_director;
 		$regional->estado_regional = $request->estado;
+=======
+		$regional->nombre = $request->nombre;
+		$regional->direccion = $request->direccion;
+		$regional->telefono = $request->telefono;
+		$regional->pbx = $request->pbx;
+		$regional->director = $request->director;
+		$regional->telefono_director = $request->telefono_director;
+		$regional->estado = $request->estado;
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
 		$regional->save();
 		return redirect('regional');
 	}
@@ -80,6 +90,7 @@ class RegionalController extends Controller {
 	public function update(Request $request)
 	{
 		$regional=Regional::find($request->id);
+<<<<<<< HEAD
 		$regional->nombre_regional = $request->nombre_regional;
 		$regional->direccion_regional = $request->direccion_regional;
 		$regional->telefono_regional = $request->telefono_regional;
@@ -87,6 +98,15 @@ class RegionalController extends Controller {
 		$regional->director_regional = $request->director_regional;
 		$regional->telefono_director = $request->telefono_director;
 		$regional->estado_regional = $request->estado_regional;
+=======
+		$regional->nombre = $request->nombre;
+		$regional->direccion = $request->direccion;
+		$regional->telefono = $request->telefono;
+		$regional->pbx = $request->pbx;
+		$regional->director = $request->director;
+		$regional->telefono_director = $request->telefono_director;
+		$regional->estado = $request->estado;
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
 		$regional->save();
 		return redirect('regional');
 	}
@@ -106,7 +126,11 @@ class RegionalController extends Controller {
 
 	public function search(Request $request)
 	{
+<<<<<<< HEAD
 		$regionales=Regional::where('nombre_regional','like','%'.$request->nombre.'%')->get();
+=======
+		$regional=Regional::where('nombre','like','%'.$request->nombre.'%')->get();
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
 		return \View::make('list_regional',compact('regionales'));
 
 	}

@@ -28,6 +28,7 @@
 				<tbody>
 					@foreach($regionales as $regional)
 					<tr>
+<<<<<<< HEAD
 						<td>{{$regional->nombre_regional}}</td>
 						<td>{{$regional->direccion_regional}}</td>
 						<td>{{$regional->telefono_regional}}</td>
@@ -35,6 +36,15 @@
 						<td>{{$regional->director_regional}}</td>
 						<td>{{$regional->telefono_director}}</td>
 						<td>{{$regional->estado_regional}}</td>
+=======
+						<td>{{$regional->nombre}}</td>
+						<td>{{$regional->direccion}}</td>
+						<td>{{$regional->telefono}}</td>
+						<td>{{$regional->pbx}}</td>
+						<td>{{$regional->director}}</td>
+						<td>{{$regional->telefono_director}}</td>
+						<td>{{$regional->estado}}</td>
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
 						<td>
 							<a class="btn btn-primary btn-xs" href="{{route('regional.edit',['id'=> $regional->id])}}">Editar</a>
 							<a class="btn btn-danger btn-xs" href="{{route('regional/destroy',['id'=> $regional->id])}}">Eliminar</a>

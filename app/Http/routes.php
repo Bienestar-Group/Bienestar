@@ -11,6 +11,21 @@
 |
 */
 
+<<<<<<< HEAD
+=======
+Route::resource('regional','RegionalController');
+Route::get('regional/destroy/{id}',['as' => 'regional/destroy','uses'=>'RegionalController@destroy']);
+Route::post('regional/search',['as' => 'regional/search', 'uses'=>'RegionalController@search']);
+
+Route::resource('aprendiz','AprendizController');
+Route::get('aprendiz/destroy/{id}',['as' => 'aprendiz/destroy','uses'=>'AprendizController@destroy']);
+Route::post('aprendiz/search',['as' => 'aprendiz/search', 'uses'=>'AprendizController@search']);	
+
+Route::resource('programa','ProgramaController');
+Route::get('programa/destroy/{id}',['as' => 'programa/destroy','uses'=>'ProgramaController@destroy']);
+Route::post('programa/search',['as' => 'programa/search', 'uses'=>'ProgramaController@search']);	
+
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
@@ -20,10 +35,17 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
 Route::resource('regional','RegionalController');
 Route::get('regional/destroy/{id}',['as' => 'regional/destroy','uses'=>'RegionalController@destroy']);
 Route::post('regional/search',['as' => 'regional/search', 'uses'=>'RegionalController@search']);	
 
+<<<<<<< HEAD
 Route::resource('concepto','ConceptoController');
 Route::get('concepto/destroy/{id}',['as' => 'concepto/destroy','uses'=>'ConceptoController@destroy']);
 Route::post('concepto/search',['as' => 'concepto/search', 'uses'=>'ConceptoController@search']);
@@ -43,3 +65,13 @@ Route::post('curso/search',['as' => 'curso/search', 'uses'=>'CursoController@sea
 Route::resource('taller','TallerController');
 Route::get('taller/destroy/{id}',['as' => 'taller/destroy','uses'=>'TallerController@destroy']);
 Route::post('taller/search',['as' => 'taller/search', 'uses'=>'TallerController@search']);	
+=======
+Route::resourse ('profesional','ProfesionalController');
+Route::get('profesional/destroy/{ID_PROFESIONAL}',['as'=>'profesional/destroy', 'uses'=>'ProfesionalController@destroy']);
+Route::post('profesional/search',['as'=>'profesional/search','uses'=>'ProfesionalController@search']);
+
+Route::resourse ('seguimiento','SeguimientoController');
+Route::get('seguimiento/destroy/{ID_SEGUIMIENTO}',['as'=>'seguimiento/destroy', 'uses'=>'SeguimientoController@destroy']);
+Route::post('seguimiento/search',['as'=>'seguimiento/search','uses'=>'SeguimientoController@search']);
+>>>>>>> cdfc9e36b5934daf9dd5f14539f35964eb309025
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1

@@ -393,7 +393,11 @@
                     "name": "Jeremy Lindblom",
                     "email": "jeremeamia@gmail.com",
                     "homepage": "https://github.com/jeremeamia",
+<<<<<<< HEAD
                     "role": "developer"
+=======
+                    "role": "Developer"
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -587,6 +591,7 @@
         },
         {
             "name": "league/flysystem",
+<<<<<<< HEAD
             "version": "1.0.10",
             "source": {
                 "type": "git",
@@ -597,6 +602,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/3475ce0b1b5cab41f012905c4c58ad645088f7c9",
                 "reference": "3475ce0b1b5cab41f012905c4c58ad645088f7c9",
+=======
+            "version": "1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "c16222fdc02467eaa12cb6d6d0e65527741f6040"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c16222fdc02467eaa12cb6d6d0e65527741f6040",
+                "reference": "c16222fdc02467eaa12cb6d6d0e65527741f6040",
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
                 "shasum": ""
             },
             "require": {
@@ -664,7 +681,11 @@
                 "sftp",
                 "storage"
             ],
+<<<<<<< HEAD
             "time": "2015-07-21 19:35:53"
+=======
+            "time": "2015-07-28 20:41:58"
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
         },
         {
             "name": "monolog/monolog",

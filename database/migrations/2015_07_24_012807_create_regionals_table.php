@@ -15,6 +15,7 @@ class CreateRegionalsTable extends Migration {
 		Schema::create('regional', function(Blueprint $table)
 		{
 			$table->increments('id');
+<<<<<<< HEAD
 			$table->string('nombre_regional');
 			$table->string('direccion_regional');
 			$table->bigInteger('telefono_regional');
@@ -22,6 +23,15 @@ class CreateRegionalsTable extends Migration {
 			$table->string('director_regional');
 			$table->bigInteger('telefono_director');
 			$table->string('estado_regional');
+=======
+			$table->string('nombre');
+			$table->string('direccion');
+			$table->bigInteger('telefono');
+			$table->bigInteger('pbx');
+			$table->string('director');
+			$table->bigInteger('telefono_director');
+			$table->string('estado');
+>>>>>>> cbabf020d4cf8d2efba0d4f890ad0d76ef7175f1
 			$table->timestamps();
 		});
 	}
